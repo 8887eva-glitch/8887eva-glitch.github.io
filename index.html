@@ -17,20 +17,27 @@
         h1 {
             color: #ff5fa2;
             font-size: 4rem;
-            animation: drift 3s infinite ease-in-out;
+            animation: drift 3s infinite ease-in-out, glow 2s infinite ease-in-out;
+            text-shadow: 0 0 10px #ff8acb;
         }
 
         @keyframes drift {
             0% { transform: translateX(0px); }
+            50% { transform: translateX(60px); }
+            100% { transform: translateX(0px); }
+        }
             50% { transform: translateX(20px); }
             100% { transform: translateX(0px); }
+        }
+            @keyframes glow {
+            0% { text-shadow: 0 0 8px #ff8acb, 0 0 15px #ffc1dd; }
+            50% { text-shadow: 0 0 18px #ff6fae, 0 0 30px #ffb0d4; }
+            100% { text-shadow: 0 0 8px #ff8acb, 0 0 15px #ffc1dd; }
         }
     </style>
 </head>
 <body>
     <h1>Hello World</h1>
-    <h1>嗨</h1>
     <h1>早安午安晚安</h1>
 </body>
 </html>
-
