@@ -1,1 +1,33 @@
-hello world 
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World - Pink Drift</title>
+    <style>
+        body {
+            background: #fff0f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        h1 {
+            color: #ff5fa2;
+            font-size: 4rem;
+            animation: drift 3s infinite ease-in-out;
+        }
+
+        @keyframes drift {
+            0% { transform: translateX(0px); }
+            50% { transform: translateX(20px); }
+            100% { transform: translateX(0px); }
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World</h1>
+</body>
+</html>
