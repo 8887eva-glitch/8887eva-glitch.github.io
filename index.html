@@ -1,43 +1,56 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html><html>
 <head>
     <meta charset="UTF-8">
-    <title>Hello World - Pink Drift</title>
+    <title>Maeva | Personal Page</title>
     <style>
         body {
-            background: #fff0f6;
+            background: linear-gradient(135deg, #fff0f6, #ffe4f0);
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
-            font-family: sans-serif;
-        }
+            font-family: "Segoe UI", sans-serif;
+        }.card {
+        background: rgba(255, 255, 255, 0.8);
+        padding: 40px 60px;
+        border-radius: 24px;
+        text-align: center;
+        box-shadow: 0 20px 40px rgba(255, 120, 180, 0.25);
+    }
 
-        h1 {
-            color: #ff5fa2;
-            font-size: 4rem;
-            animation: drift 3s infinite ease-in-out, glow 2s infinite ease-in-out;
-            text-shadow: 0 0 10px #ff8acb;
-        }
+    h1 {
+        color: #ff5fa2;
+        font-size: 4rem;
+        margin: 0;
+        animation: drift 4s infinite ease-in-out, glow 2.5s infinite ease-in-out;
+        text-shadow: 0 0 12px #ff8acb;
+    }
 
-        @keyframes drift {
-            0% { transform: translateX(0px); }
-            50% { transform: translateX(60px); }
-            100% { transform: translateX(0px); }
-        }
-            50% { transform: translateX(20px); }
-            100% { transform: translateX(0px); }
-        }
-            @keyframes glow {
-            0% { text-shadow: 0 0 8px #ff8acb, 0 0 15px #ffc1dd; }
-            50% { text-shadow: 0 0 18px #ff6fae, 0 0 30px #ffb0d4; }
-            100% { text-shadow: 0 0 8px #ff8acb, 0 0 15px #ffc1dd; }
-        }
-    </style>
+    p {
+        margin-top: 20px;
+        font-size: 1.2rem;
+        color: #666;
+    }
+
+    @keyframes drift {
+        0% { transform: translateX(0px); }
+        50% { transform: translateX(60px); }
+        100% { transform: translateX(0px); }
+    }
+
+    @keyframes glow {
+        0% { text-shadow: 0 0 10px #ff8acb, 0 0 18px #ffc1dd; }
+        50% { text-shadow: 0 0 22px #ff6fae, 0 0 36px #ffb0d4; }
+        100% { text-shadow: 0 0 10px #ff8acb, 0 0 18px #ffc1dd; }
+    }
+</style>
+
 </head>
 <body>
-    <h1>Hello World</h1>
-    <h1>早安午安晚安</h1>
+    <div class="card">
+        <h1>Maeva</h1>
+        <p>Welcome to my personal page ✨</p>
+    </div>
 </body>
 </html>
